@@ -61,14 +61,14 @@ Cat.prototype.talk = function() {
 	return ' 말을 합니다.';
 }
 Cat.prototype.info = function() {
-	return		'이름 : ' + this.getName() + 
-				', 품종 : ' + this.getKind() + 
-				', 털길이 : ' + this.getFursize() +
-				', 털색: ' + this.getFurcolor() + 
-				', 배고픔: ' + this.getHungry() +
-				', 눈색 : ' + this.getEyecolor() +
-				', 나이 : ' + this.getAge() +
-				', 성별 : ' + this.getSex() +
-				', 건강 : ' + this.getHealth() +
-				', 성격 : ' + this.getCharacter()
+	return	'이름 : ' + this.getName() + 
+			', 품종 : ' + this.getKind() + 
+			', 털길이 : ' + this.getFursize() +
+			', 털색: ' + this.getFurcolor() + 
+			', 배고픔: ' + this.getHungry() +
+			', 눈색 : ' + this.getEyecolor() +
+			', 나이 : ' + this.getAge() +
+			', 성별 : ' + this.getSex() +
+			', 건강 : ' + this.getHealth() +
+			', 성격 : ' + this.getCharacter()
 }
