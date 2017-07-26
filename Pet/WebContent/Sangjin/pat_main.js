@@ -111,7 +111,5 @@ for(i=0; i<parrots.length; i++){
 	console.log(cocks[i].toString());
 }
 
-var ddol = new Parrot('GreenChiconewer','Green','Good','middle','DDol','normal', 'Gray');
-ddol.cry();
-console.log(ddol.toString());
+
 
