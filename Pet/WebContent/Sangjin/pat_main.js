@@ -24,3 +24,7 @@ console.log(cat1.getName() + cat1.sleep());
 console.log(cat1.getName() + cat1.sleep());
 console.log(cat1.getName() + cat1.sleep());
 console.log(cat1.info());
+
+var ddol = new Parrot('GreenChiconewer','Green','Good','middle','DDol','normal', 'Gray');
+ddol.cry();
+console.log(ddol.toString());

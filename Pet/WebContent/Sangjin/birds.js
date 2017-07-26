@@ -9,7 +9,15 @@ function Parrot(kind, bodycolor, health, size, name, language, beakcolor){
 	this.size = size;
 	this.name = name;
 	this.language = language;
-	this.beakcolor = beakcolor;
+	this.beakcolor = beakcolor;	
+//	function toString(){
+//		var result = 'asdf';
+//		result = 'name: '+this.name +' kind: '+this.kind+' bodycolor: '+this.bodycolor+' beakcolor: '+this.beakcolor+' size: '+this.size+' language skill: '+this.language+' health state: '+this.health;
+//		return result;
+//	}
+}
+Parrot.prototype.toString = function(){
+	return 'name: '+this.name +' kind: '+this.kind+' bodycolor: '+this.bodycolor+' beakcolor: '+this.beakcolor+' size: '+this.size+' language skill: '+this.language+' health state: '+this.health;
 }
 
 Parrot.prototype.breed = function(){
@@ -32,6 +40,8 @@ Parrot.prototype.cry = function(){
 	this.crying = 'barking.';
 };
 
-var ddol = new Parrot('GreenChiconewer','Green','Good','middle','DDol','normal', 'Gray');
-ddol.cry();
-console.dir(ddol);
+//var ddol = new Parrot('GreenChiconewer','Green','Good','middle','DDol','normal', 'Gray');
+//ddol.cry();
+//console.dir(ddol);
+//console.log(ddol.toString());
+//console.log('end');
