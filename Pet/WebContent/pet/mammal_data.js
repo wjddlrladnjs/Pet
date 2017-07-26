@@ -1,12 +1,11 @@
 /**
- * 		포유류 객체 js
+ * 		포유류 객체
  */
 
 // 포유류 생성자 생성
-function Mammal( kind, fursize, furcolor, hungry, eyecolor, age, sex, health, name, character ) {
+function Mammal( kind, furcolor, hungry, eyecolor, age, sex, health, name, character ) {
 	
 	this.kind = kind;
-	this.fursize = fursize;
 	this.furcolor = furcolor;
 	this.hungry = hungry;
 	this.eyecolor = eyecolor;
@@ -15,7 +14,6 @@ function Mammal( kind, fursize, furcolor, hungry, eyecolor, age, sex, health, na
 	this.health = health;
 	this.name = name;
 	this.character = character;
-	
 }
 
 Mammal.prototype.setKind = function(kind) { this.kind = kind; };
@@ -71,7 +69,6 @@ Mammal.prototype.talk = function() {
 Mammal.prototype.toString = function() {
 	return	'이름 : ' + this.getName() + 
 			', 품종 : ' + this.getKind() + 
-			', 털길이 : ' + this.getFursize() +
 			', 털색: ' + this.getFurcolor() + 
 			', 배고픔: ' + this.getHungry() +
 			', 눈색 : ' + this.getEyecolor() +
