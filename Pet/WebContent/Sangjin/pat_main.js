@@ -25,6 +25,7 @@ console.log(cat1.getName() + cat1.sleep());
 console.log(cat1.getName() + cat1.sleep());
 console.log(cat1.info());
 
+
 ////////////////////////////////////////////앵무새
 
 var ddol = new Parrot();
@@ -109,3 +110,8 @@ cocks.sort(function(left, right){return right.hungryState - left.hungryState})
 for(i=0; i<parrots.length; i++){
 	console.log(cocks[i].toString());
 }
+
+var ddol = new Parrot('GreenChiconewer','Green','Good','middle','DDol','normal', 'Gray');
+ddol.cry();
+console.log(ddol.toString());
+

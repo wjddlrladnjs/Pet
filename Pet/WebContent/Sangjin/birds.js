@@ -25,6 +25,16 @@ Bird.prototype.getHungryState = function() { return this.hungryState; }
 
 Bird.prototype.toString = function(){
 	return 'name: '+this.name +' kind: '+this.kind+' bodycolor: '+this.bodycolor+' size: '+this.size+' health state: '+this.health;
+	this.language = language;
+	this.beakcolor = beakcolor;	
+//	function toString(){
+//		var result = 'asdf';
+//		result = 'name: '+this.name +' kind: '+this.kind+' bodycolor: '+this.bodycolor+' beakcolor: '+this.beakcolor+' size: '+this.size+' language skill: '+this.language+' health state: '+this.health;
+//		return result;
+//	}
+}
+Parrot.prototype.toString = function(){
+	return 'name: '+this.name +' kind: '+this.kind+' bodycolor: '+this.bodycolor+' beakcolor: '+this.beakcolor+' size: '+this.size+' language skill: '+this.language+' health state: '+this.health;
 }
 
 Bird.prototype.breed = function(){
@@ -46,6 +56,7 @@ Bird.prototype.cry = function(){
 	this.crying = 'barking.';
 };
 
+
 Bird.prototype.checkHealth = function(){
 	if(this.getHungryState() > 80){
 		this.setHealth('Great');
@@ -57,3 +68,9 @@ Bird.prototype.checkHealth = function(){
 		this.setHealth('Bad');
 	}
 }
+
+//var ddol = new Parrot('GreenChiconewer','Green','Good','middle','DDol','normal', 'Gray');
+//ddol.cry();
+//console.dir(ddol);
+//console.log(ddol.toString());
+//console.log('end');
