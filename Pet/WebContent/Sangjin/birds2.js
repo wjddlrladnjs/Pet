@@ -19,42 +19,12 @@ Cock.prototype.getSex = function(){	return this.sex;	}
 
 
 Cock.prototype.toString = function(){
-	return 'name: '+this.name +' kind: '+this.kind+' bodycolor: '+this.bodycolor+' Aggression: '+this.aggression+' size: '+this.size+' Sex: '+this.sex+' health state: '+this.health;
+	return 'name: '+this.name +' kind: '+this.kind+' bodycolor: '+this.bodycolor+' Aggression: '+this.aggression+' size: '+this.size+' Sex: '+this.sex+' health state: '+this.health+' hungryState: '+this.hungryState;
 }
 
 Cock.prototype.jump = function(){
+	this.hungryState -= 15;
+	this.checkHealth();
 	this.jumping = 'not fly away, just jump.';
 };
 
-var dal = new Cock();
-dal.setKind('KoreanCock');
-dal.setBodycolor('GoldenRed');
-dal.setHealth('Great');
-dal.setSize('middle');
-dal.setName('Dal');
-dal.setAggression('Aggressive');
-dal.setSex('Cock');
-
-var dol = new Cock();
-dol.setKind('WhiteCochin');
-dol.setBodycolor('White');
-dol.setHealth('Normal');
-dol.setSize('Big');
-dol.setName('Dol');
-dol.setAggression('Normal');
-dol.setSex('hen');
-
-var dul = new Cock();
-dul.setKind('BlueRoseComb');
-dul.setBodycolor('GrayBlue');
-dul.setHealth('Good');
-dul.setSize('small');
-dul.setName('Dul');
-dul.setAggression('Not Aggressive');
-dul.setSex('Cock');
-
-var cocks = [dal, dol, dul];
-
-console.log(cocks[0].toString());
-console.log(cocks[1].toString());
-console.log(cocks[2].toString());
