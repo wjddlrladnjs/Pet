@@ -5,37 +5,49 @@
 // 생성자 생성
 function Cat(kind, fursize, furcolor, hungry, eyecolor, age, sex, health, name, character ) {
 	
-	this.setKind = function(kind) { this.kind = kind; };
-	this.getKind = function() { return this.kind; };
-	
-	this.setFursize = function(fursize) { this.fursize = fursize; };
-	this.getFursize = function() { return this.fursize; };
-	
-	this.setFurcolor = function(furcolor) { this.furcolor = furcolor; };
-	this.getFurcolor = function () { return this.furcolor; };
-	
-	this.setHungry = function(hungry) { this.hungry = hungry; };
-	this.getHungry = function() { return this.hungry; };
-
-	this.setEyecolor = function(eyecolor) { this.eyecolor = eyecolor; };
-	this.getEyecolor = function() { return this.eyecolor; };
-	
-	this.setAge = function(age) { this.age = age; };
-	this.getAge = function() { return this.age; };
-	
-	this.setSex = function(sex) { this.sex = sex; };
-	this.getSex = function() { return this.sex; };
-	
-	this.setHealth = function(health) { this.health = health; };
-	this.getHealth = function() { return this.health; };
-	
-	this.setName = function(name) { this.name = name; };
-	this.getName = function () { return this.name; };
-	
-	this.setCharacter = function(character) { this.character = character; };
-	this.getCharacter = function() { return this.character; };
+	this.kind = kind;
+	this.fursize = fursize;
+	this.furcolor = furcolor;
+	this.hungry = hungry;
+	this.eyecolor = eyecolor;
+	this.age = age;
+	this.sex = sex;
+	this.health = health;
+	this.name = name;
+	this.character = character;
 	
 }
+
+Cat.prototype.setKind = function(kind) { this.kind = kind; };
+Cat.prototype.getKind = function() { return this.kind; };
+
+Cat.prototype.setFursize = function(fursize) { this.fursize = fursize; };
+Cat.prototype.getFursize = function() { return this.fursize; };
+
+Cat.prototype.setFurcolor = function(furcolor) { this.furcolor = furcolor; };
+Cat.prototype.getFurcolor = function () { return this.furcolor; };
+
+Cat.prototype.setHungry = function(hungry) { this.hungry = hungry; };
+Cat.prototype.getHungry = function() { return this.hungry; };
+
+Cat.prototype.setEyecolor = function(eyecolor) { this.eyecolor = eyecolor; };
+Cat.prototype.getEyecolor = function() { return this.eyecolor; };
+
+Cat.prototype.setAge = function(age) { this.age = age; };
+Cat.prototype.getAge = function() { return this.age; };
+
+Cat.prototype.setSex = function(sex) { this.sex = sex; };
+Cat.prototype.getSex = function() { return this.sex; };
+
+Cat.prototype.setHealth = function(health) { this.health = health; };
+Cat.prototype.getHealth = function() { return this.health; };
+
+Cat.prototype.setName = function(name) { this.name = name; };
+Cat.prototype.getName = function () { return this.name; };
+
+Cat.prototype.setCharacter = function(character) { this.character = character; };
+Cat.prototype.getCharacter = function() { return this.character; };
+
 
 Cat.prototype.sleep = function() {
 	this.health += 10;
